@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./img/playstore-icon.png">
+    <title>功能介紹</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="vendor/device-mockups/device-mockups.css">
+
+    <!-- Theme CSS -->
+    <link href="css/new-age.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script language="JavaScript"> 
+            function next(){
+                document.getElementById("i6").src = './img/圖片1.jpg';
+                //console.log(id);
+            }
+            function 圖片(){
+                document.getElementById("i6").src = './img/相簿.gif';
+                console.log(id);
+            }
+            function 拍照(){
+                document.getElementById("i6").src = './img/demo-screen-1.jpg';
+                console.log(id);
+            }
+            function Email(){
+                document.getElementById("i6").src = './img/Email.gif';
+                console.log(id);
+            }
+            function 網頁分享(){
+                document.getElementById("i6").src = './img/網頁分享.gif';
+                console.log(id);
+            }
+            function 相簿分享(){
+                document.getElementById("i6").src = './img/相簿分享.gif';
+                console.log(id);
+            }
+    </script>
+    
+
+</head>
+
+<body id="page-top">
+
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="./首頁.html">相連你我，鑲連生活</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="./下載.html">下載</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#page-top">功能介紹</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="./製作團隊.html">製作團隊</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <section id="features" class="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-heading">
+                        <h2>相連你我，鑲連生活</h2>
+                        <p class="text-muted">看看你可以做些甚麼！</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="device-container">
+                        <div class="device-mockup galaxyS7e portrait">
+                            <div class="device">
+                                <div class="screen">
+                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                                    <img id = "i6" src="./img/圖片1.jpg" class="img-responsive" alt="" />
+                                </div>
+                                <div class="button" onclick="next()">
+                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <i class="icon-picture text-primary" onclick="圖片()"></i>
+                                    <h3>圖片記事功能</h3>
+                                    <p class="text-muted">資訊能夠以圖片表達時，使用選取圖片的方式比起單純文字更加簡單詳細不易出錯。</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <i class="icon-envelope-letter text-primary" onclick="Email()"></i>
+                                    <h3>Email 記事功能</h3>
+                                    <p class="text-muted">將Email鑲連至月曆中，從月曆打開鑲連的Email內容增加記錄的形式，同時保持原有資訊的完整度。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <i class="icon-notebook text-primary" onclick="相簿分享()"></i>
+                                    <h3>相簿分享記事功能</h3>
+                                    <p class="text-muted">全新的分享功能，支援使用分享的方式把需要的圖片從相簿匯出到行事曆上。</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    
+                                    <i class="icon-share text-primary" onclick="網頁分享()"></i>
+                                    <h3>網頁分享記事功能</h3>
+                                    <p class="text-muted">增加記錄的形式，同時保持原有瀏覽習慣和資訊的完整度、時效性。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2016 鑲連月曆. All Rights Reserved.</p>
+            <ul class="list-inline">
+                <li>
+                    <a href="#">隱私權保護政策</a>
+                </li>
+                <li>
+                    <a href="#">使用條款</a>
+                </li>
+                <li>
+                    <a href="#">FAQ</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/new-age.min.js"></script>
+
+</body>
+
+</html>
